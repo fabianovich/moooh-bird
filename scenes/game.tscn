@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://3ajw65i7l0rd"]
+
+[ext_resource type="PackedScene" uid="uid://rirlv7h70kv0" path="res://scenes/bird.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://bqob8jih5ru87" path="res://code/pipespawner.gd" id="2_yqjtg"]
+
+[node name="Game" type="Node2D" unique_id=1572136576]
+
+[node name="Bird" parent="." unique_id=1475574686 instance=ExtResource("1_uwrxv")]
+position = Vector2(300, 400)
+scale = Vector2(0.75, 0.75)
+
+[node name="PipeSpawner" type="Node" parent="." unique_id=1388609453]
+script = ExtResource("2_yqjtg")

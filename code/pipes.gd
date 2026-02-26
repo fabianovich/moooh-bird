@@ -1,0 +1,7 @@
+extends StaticBody2D
+
+var pipespeed = 200
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	position.x -= pipespeed * delta
