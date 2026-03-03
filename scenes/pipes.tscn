@@ -9,9 +9,9 @@
 script = ExtResource("1_3ahhd")
 
 [node name="up" parent="." unique_id=1807757513 instance=ExtResource("2_v53nb")]
-position = Vector2(0, -150)
+position = Vector2(0, -126)
 
 [node name="down" parent="." unique_id=483753593 instance=ExtResource("3_c66uf")]
-position = Vector2(0, 150)
+position = Vector2(0, 120)
 
 [node name="score_collision" parent="." unique_id=2111513075 instance=ExtResource("4_kufs7")]

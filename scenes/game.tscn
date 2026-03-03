@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://rirlv7h70kv0" path="res://scenes/bird.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://bqob8jih5ru87" path="res://code/pipespawner.gd" id="2_yqjtg"]
+[ext_resource type="Script" uid="uid://crjerxg1qhjhb" path="res://code/score_label.gd" id="3_lnu2h"]
 
 [node name="Game" type="Node2D" unique_id=1572136576]
 
@@ -11,3 +12,24 @@ scale = Vector2(0.75, 0.75)
 
 [node name="PipeSpawner" type="Node" parent="." unique_id=1388609453]
 script = ExtResource("2_yqjtg")
+
+[node name="Control" type="Control" parent="." unique_id=70661711]
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 300.0
+offset_top = 200.0
+offset_right = 339.0
+offset_bottom = 246.0
+
+[node name="Label" type="Label" parent="Control" unique_id=1449076740]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -43.0
+offset_right = 26.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_lnu2h")

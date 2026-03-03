@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dergj7ftf1j3p"]
 
-[ext_resource type="Script" uid="uid://cpyjl120kswjx" path="res://scenes/score_collision.gd" id="1_pp2fq"]
+[ext_resource type="Script" uid="uid://cpyjl120kswjx" path="res://code/score_collision.gd" id="1_pp2fq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4nupw"]
-size = Vector2(108, 296)
+size = Vector2(108, 250)
 
 [node name="score_collision" type="Area2D" unique_id=2111513075]
 script = ExtResource("1_pp2fq")
