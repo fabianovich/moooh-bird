@@ -5,7 +5,7 @@ extends Node
 #var collisionScene = preload("res://scenes/score_collision.tscn")
 var pipeScene = preload("res://scenes/pipes.tscn")
 var dt = 0
-var pipeInterval = 4
+var pipeInterval = 3
 
 func _process(delta: float) -> void:
 	if dt > pipeInterval:

@@ -33,3 +33,6 @@ func deathscreen():
 	screen.score = $"../Control/Label".score
 	$"../Control/Label".visible = false
 	add_sibling(screen)
+	
+func restart():
+	get_tree().reload_current_scene()
