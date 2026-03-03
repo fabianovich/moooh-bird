@@ -23,14 +23,13 @@ offset_top = 200.0
 offset_right = 339.0
 offset_bottom = 246.0
 
-[node name="Label" type="Label" parent="Control" unique_id=1449076740]
+[node name="Score" type="Label" parent="Control" unique_id=1449076740]
 layout_mode = 0
 offset_left = -24.0
 offset_top = -43.0
 offset_right = 26.0
 offset_bottom = 40.0
 theme = ExtResource("3_lbhrr")
-theme_override_font_sizes/font_size = 50
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1

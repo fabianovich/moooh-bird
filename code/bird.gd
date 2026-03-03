@@ -25,13 +25,14 @@ func _physics_process(delta: float) -> void:
 				print(body.name)
 				#game over
 				game = false
+				$CollisionShape2D.disabled = true
 				deathscreen()
 	move_and_slide()
 	
 func deathscreen():
 	var screen = deathScreen.instantiate()
-	screen.score = $"../Control/Label".score
-	$"../Control/Label".visible = false
+	screen.score = $"../Control/Score".score
+	$"../Control/Score".visible = false
 	add_sibling(screen)
 	
 func restart():
