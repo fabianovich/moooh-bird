@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://divtjuddo45of"]
+
+[ext_resource type="Script" uid="uid://d26ptk6gvouyc" path="res://code/deathscreen.gd" id="1_uurjc"]
+[ext_resource type="Theme" uid="uid://den1x1b4j3ojy" path="res://themes/theme.tres" id="1_ylnw1"]
+
+[sub_resource type="Animation" id="Animation_ylnw1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_uurjc"]
+resource_name = "get in"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 3.0314302),
+"update": 0,
+"values": [Vector2(539, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eye5d"]
+_data = {
+&"RESET": SubResource("Animation_ylnw1"),
+&"get in": SubResource("Animation_uurjc")
+}
+
+[node name="Control" type="Control" unique_id=1688579900]
+z_index = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.0007324219
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uurjc")
+
+[node name="Label" type="Label" parent="." unique_id=1359427389]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 209.0
+offset_right = 446.0
+offset_bottom = 326.0
+theme = ExtResource("1_ylnw1")
+text = "u ded lol"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=1818897442]
+z_index = -1
+layout_mode = 0
+offset_left = 115.0
+offset_top = 183.0
+offset_right = 492.0
+offset_bottom = 549.0
+theme = ExtResource("1_ylnw1")
+
+[node name="score" type="Label" parent="." unique_id=708653905]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 330.0
+offset_right = 395.0
+offset_bottom = 412.0
+theme = ExtResource("1_ylnw1")
+text = "score: 1"
+
+[node name="Button" type="Button" parent="." unique_id=56606164]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 445.0
+offset_right = 345.0
+offset_bottom = 498.0
+theme = ExtResource("1_ylnw1")
+text = "restart"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1849429627]
+libraries/ = SubResource("AnimationLibrary_eye5d")
+autoplay = &"get in"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

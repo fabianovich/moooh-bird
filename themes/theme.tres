@@ -1,0 +1,19 @@
+[gd_resource type="Theme" format=3 uid="uid://den1x1b4j3ojy"]
+
+[ext_resource type="FontFile" uid="uid://b3urbkr3bhpqw" path="res://assets/Jersey10-Regular.ttf" id="1_1h68f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1h68f"]
+bg_color = Color(0.12268675, 0.2209416, 0.14724937, 1)
+
+[resource]
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_hover_color = Color(0.50534385, 0.505344, 0.505345, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 35
+Button/fonts/font = ExtResource("1_1h68f")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/constants/outline_size = 8
+Label/font_sizes/font_size = 75
+Label/fonts/font = ExtResource("1_1h68f")
+Panel/styles/panel = SubResource("StyleBoxFlat_1h68f")

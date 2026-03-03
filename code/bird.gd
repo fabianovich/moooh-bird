@@ -3,8 +3,9 @@ extends CharacterBody2D
 const JUMP_VELOCITY = -500.0
 
 var game = true
-var flap = false
-var fall = false
+var deathScreen = preload("res://scenes/deathscreen.tscn")
+#var flap = false
+#var fall = false
 
 func _physics_process(delta: float) -> void:
 	velocity += get_gravity() * delta
@@ -24,4 +25,11 @@ func _physics_process(delta: float) -> void:
 				print(body.name)
 				#game over
 				game = false
+				deathscreen()
 	move_and_slide()
+	
+func deathscreen():
+	var screen = deathScreen.instantiate()
+	screen.score = $"../Control/Label".score
+	$"../Control/Label".visible = false
+	add_sibling(screen)
