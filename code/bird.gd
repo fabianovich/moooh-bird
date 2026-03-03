@@ -18,6 +18,7 @@ func _physics_process(delta: float) -> void:
 		for index in get_slide_collision_count():
 				var collision := get_slide_collision(index)
 				var body := collision.get_collider()
+				print(body.name)
 				#game over
-				game = false
+				#game = false
 		move_and_slide()

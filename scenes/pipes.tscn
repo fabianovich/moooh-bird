@@ -1,31 +1,17 @@
 [gd_scene format=3 uid="uid://chexpccwh835a"]
 
 [ext_resource type="Script" uid="uid://cse8hcv10l0kv" path="res://code/pipes.gd" id="1_3ahhd"]
-[ext_resource type="Texture2D" uid="uid://l88a7yl7sd8x" path="res://assets/icon.svg" id="1_f17p0"]
+[ext_resource type="PackedScene" uid="uid://c0gudurnod6ay" path="res://scenes/pipe_up.tscn" id="2_v53nb"]
+[ext_resource type="PackedScene" uid="uid://xfftbb1874pr" path="res://scenes/pipe_down.tscn" id="3_c66uf"]
+[ext_resource type="PackedScene" uid="uid://dergj7ftf1j3p" path="res://scenes/score_collision.tscn" id="4_kufs7"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ahhd"]
-size = Vector2(128, 588)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f17p0"]
-size = Vector2(123, 584)
-
-[node name="StaticBody2D" type="StaticBody2D" unique_id=2030734738]
+[node name="Node2D" type="Node2D" unique_id=1541705763]
 script = ExtResource("1_3ahhd")
 
-[node name="down" type="CollisionShape2D" parent="." unique_id=1379578887]
-position = Vector2(0, 400)
-shape = SubResource("RectangleShape2D_3ahhd")
+[node name="up" parent="." unique_id=1807757513 instance=ExtResource("2_v53nb")]
+position = Vector2(0, -150)
 
-[node name="Sprite2D2" type="Sprite2D" parent="down" unique_id=492716634]
-position = Vector2(-6.7762636e-21, -1)
-scale = Vector2(1.0625, 4.6484375)
-texture = ExtResource("1_f17p0")
+[node name="down" parent="." unique_id=483753593 instance=ExtResource("3_c66uf")]
+position = Vector2(0, 150)
 
-[node name="up" type="CollisionShape2D" parent="." unique_id=1164591969]
-position = Vector2(0.5, -400)
-shape = SubResource("RectangleShape2D_f17p0")
-
-[node name="Sprite2D" type="Sprite2D" parent="up" unique_id=1595880682]
-position = Vector2(-0.5, -1)
-scale = Vector2(1.0625, 4.6484375)
-texture = ExtResource("1_f17p0")
+[node name="score_collision" parent="." unique_id=2111513075 instance=ExtResource("4_kufs7")]

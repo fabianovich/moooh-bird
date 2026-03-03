@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dergj7ftf1j3p"]
+
+[ext_resource type="Script" uid="uid://cpyjl120kswjx" path="res://scenes/score_collision.gd" id="1_pp2fq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4nupw"]
+size = Vector2(108, 296)
+
+[node name="score_collision" type="Area2D" unique_id=2111513075]
+script = ExtResource("1_pp2fq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=470419221]
+shape = SubResource("RectangleShape2D_4nupw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

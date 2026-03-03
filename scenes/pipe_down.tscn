@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://xfftbb1874pr"]
+
+[ext_resource type="Texture2D" uid="uid://l88a7yl7sd8x" path="res://assets/icon.svg" id="1_3sgmx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubpi2"]
+size = Vector2(128, 588)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=483753593]
+
+[node name="down" type="CollisionShape2D" parent="." unique_id=1825279829]
+position = Vector2(0, 301)
+shape = SubResource("RectangleShape2D_ubpi2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="down" unique_id=1418284964]
+position = Vector2(8.077936e-28, -3)
+scale = Vector2(1.0625, 4.6484375)
+texture = ExtResource("1_3sgmx")
