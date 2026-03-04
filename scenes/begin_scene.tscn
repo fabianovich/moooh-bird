@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://djkwbkxrmuq7q" path="res://assets/mrcowhater3000.png" id="2_r6kj7"]
 [ext_resource type="Texture2D" uid="uid://b67rkc4g446ru" path="res://assets/yes-parchment.png" id="3_y3ws4"]
 [ext_resource type="Theme" uid="uid://den1x1b4j3ojy" path="res://themes/theme.tres" id="4_hi5v3"]
+[ext_resource type="Texture2D" uid="uid://73i6nlkobym8" path="res://assets/arrow.png" id="5_r6kj7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y5ede"]
 animations = [{
@@ -20,7 +21,7 @@ animations = [{
 script = ExtResource("1_ncs0v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=399513470]
-position = Vector2(293, 272.24997)
+position = Vector2(293, 284.24997)
 scale = Vector2(8.445312, 8.445312)
 sprite_frames = SubResource("SpriteFrames_y5ede")
 
@@ -29,9 +30,9 @@ anchors_preset = -1
 anchor_right = 0.92800003
 anchor_bottom = 0.81200004
 offset_left = 27.000015
-offset_top = 537.25006
+offset_top = 549.25006
 offset_right = 135.80002
-offset_bottom = 581.05005
+offset_bottom = 593.05005
 scale = Vector2(5, 5)
 texture = ExtResource("3_y3ws4")
 region_rect = Rect2(7, 15, 50, 34)
@@ -42,12 +43,26 @@ patch_margin_bottom = 13
 
 [node name="dialog" type="RichTextLabel" parent="." unique_id=1892585058]
 offset_left = 61.0
-offset_top = 564.0
+offset_top = 576.0
 offset_right = 517.0
-offset_bottom = 720.0
+offset_bottom = 732.0
 theme = ExtResource("4_hi5v3")
 bbcode_enabled = true
 text = " MrCowHater3000:
  I hat cows!!!"
 scroll_active = false
 scroll_following_visible_characters = true
+
+[node name="Label" type="Label" parent="." unique_id=643786328]
+offset_left = 26.0
+offset_top = 15.0
+offset_right = 468.0
+offset_bottom = 97.0
+scale = Vector2(0.645, 0.645)
+theme = ExtResource("4_hi5v3")
+text = "MrCowHater3000"
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=971479375]
+position = Vector2(133.99998, 103.99999)
+scale = Vector2(1.8515625, 1.8515625)
+texture = ExtResource("5_r6kj7")
