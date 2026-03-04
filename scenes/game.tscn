@@ -4,6 +4,10 @@
 [ext_resource type="Script" uid="uid://bqob8jih5ru87" path="res://code/pipespawner.gd" id="2_yqjtg"]
 [ext_resource type="Theme" uid="uid://den1x1b4j3ojy" path="res://themes/theme.tres" id="3_lbhrr"]
 [ext_resource type="Script" uid="uid://crjerxg1qhjhb" path="res://code/score_label.gd" id="3_lnu2h"]
+[ext_resource type="Script" uid="uid://c5wqj1aqlilj3" path="res://code/cloudspawner.gd" id="5_iywne"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbhrr"]
+bg_color = Color(1.9541085e-05, 0.47956115, 0.8674667, 1)
 
 [node name="Game" type="Node2D" unique_id=1572136576]
 
@@ -34,3 +38,12 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_lnu2h")
+
+[node name="background" type="Node" parent="." unique_id=1834866469]
+script = ExtResource("5_iywne")
+
+[node name="Panel" type="Panel" parent="background" unique_id=922711024]
+z_index = -5
+offset_right = 609.0
+offset_bottom = 811.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lbhrr")

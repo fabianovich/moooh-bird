@@ -1,10 +1,10 @@
-extends Node2D
+extends AnimatedSprite2D
 
-var pipespeed = 200
+var cloudspeed = 100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position.x -= pipespeed * delta
+	position.x -= cloudspeed * delta
 	
 	if position.x < -100:
 		queue_free()

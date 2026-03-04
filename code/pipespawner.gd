@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 func spawn():
 	var y = randi_range(200, 600)
 	var pipes = pipeScene.instantiate()
-	pipes.position = Vector2(650, y)
+	pipes.position = Vector2(700, y)
 	add_child(pipes)
 	#var pipeUp = pipeUpScene.instantiate()
 	#var pipeDown = pipeDownScene.instantiate()
