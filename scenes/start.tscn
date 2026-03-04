@@ -32,10 +32,11 @@ texture = ExtResource("3_y16t7")
 
 [node name="Label" type="Label" parent="Control" unique_id=970078858]
 layout_mode = 0
-offset_left = 86.0
-offset_top = 599.0
-offset_right = 555.0
-offset_bottom = 659.0
+offset_left = 73.0
+offset_top = 605.0
+offset_right = 513.0
+offset_bottom = 665.0
 theme_override_fonts/font = ExtResource("4_4ge6i")
 theme_override_font_sizes/font_size = 55
-text = "press spacebar to start"
+text = "press g for game"
+horizontal_alignment = 1

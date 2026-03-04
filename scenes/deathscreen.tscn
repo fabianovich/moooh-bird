@@ -99,12 +99,12 @@ text = "score: 1"
 
 [node name="Button" type="Button" parent="." unique_id=56606164]
 layout_mode = 0
-offset_left = 230.0
-offset_top = 445.0
-offset_right = 345.0
-offset_bottom = 498.0
+offset_left = 214.0
+offset_top = 441.0
+offset_right = 355.0
+offset_bottom = 494.0
 theme = ExtResource("1_ylnw1")
-text = "restart"
+text = "restart (g)"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1849429627]
 libraries/ = SubResource("AnimationLibrary_eye5d")

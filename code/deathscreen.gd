@@ -5,7 +5,7 @@ var score: int
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	$score.text = "score: " + str(score)
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("g"):
 		get_tree().reload_current_scene()
 
 
