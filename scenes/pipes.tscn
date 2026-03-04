@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://chexpccwh835a"]
 
 [ext_resource type="Script" uid="uid://cse8hcv10l0kv" path="res://code/pipes.gd" id="1_3ahhd"]
-[ext_resource type="PackedScene" uid="uid://c0gudurnod6ay" path="res://scenes/pipe_up.tscn" id="2_v53nb"]
-[ext_resource type="PackedScene" uid="uid://xfftbb1874pr" path="res://scenes/pipe_down.tscn" id="3_c66uf"]
+[ext_resource type="PackedScene" uid="uid://c0gudurnod6ay" path="res://scenes/pipe.tscn" id="2_v53nb"]
 [ext_resource type="PackedScene" uid="uid://dergj7ftf1j3p" path="res://scenes/score_collision.tscn" id="4_kufs7"]
 
 [node name="Node2D" type="Node2D" unique_id=1541705763]
 script = ExtResource("1_3ahhd")
 
 [node name="up" parent="." unique_id=1807757513 instance=ExtResource("2_v53nb")]
-position = Vector2(0, -126)
+position = Vector2(0, -130)
 
-[node name="down" parent="." unique_id=483753593 instance=ExtResource("3_c66uf")]
-position = Vector2(0, 120)
+[node name="down" parent="." unique_id=1037578366 instance=ExtResource("2_v53nb")]
+position = Vector2(0, 133.395)
+scale = Vector2(1, -1)
 
 [node name="score_collision" parent="." unique_id=2111513075 instance=ExtResource("4_kufs7")]

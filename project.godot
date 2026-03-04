@@ -14,7 +14,7 @@ config/name="mooh bird"
 run/main_scene="uid://dek3wvxigku0x"
 config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/bg_color=Color(0.1444313, 0.14334828, 0.11442315, 1)
-boot_splash/image="uid://dhukg1tcsiutr"
+boot_splash/stretch_mode=0
 config/icon="uid://dhukg1tcsiutr"
 
 [display]
