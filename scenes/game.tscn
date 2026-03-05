@@ -47,3 +47,5 @@ z_index = -5
 offset_right = 609.0
 offset_bottom = 811.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_lbhrr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1379272637]
