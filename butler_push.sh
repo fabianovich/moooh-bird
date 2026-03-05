@@ -18,7 +18,7 @@ echo "┌───────────────────────�
 echo "│     itch.io Butler Deployer     │"
 echo "└─────────────────────────────────┘"
 echo ""
-read -rp "  Enter version number (e.g. 1.0.0): " VERSION
+read -rp "  Enter version number (e.g. v6.9.69): " VERSION
 
 if [[ -z "$VERSION" ]]; then
   echo "  ✗ Version number cannot be empty."
@@ -57,5 +57,5 @@ butler push "$WEB_DIR" \
 echo "  ✓ Web uploaded."
 echo ""
 
-echo "  ✓ All builds deployed — v$VERSION is live on itch.io!"
+echo "  ✓ All builds deployed — $VERSION is live on itch.io!"
 echo ""
