@@ -25,9 +25,9 @@ if [[ -z "$VERSION" ]]; then
   exit 1
 fi
 
-LINUX_DIR="./export/$VERSION/linux"
-WINDOWS_DIR="./export/$VERSION/windows"
-WEB_DIR="./export/$VERSION/web"
+LINUX_DIR="./export/$VERSION/moooh.x86_64"
+WINDOWS_DIR="./export/$VERSION/moooh.exe"
+WEB_DIR="./export/$VERSION/moooh.zip"
 
 echo ""
 echo "  Deploying v$VERSION to $ITCH_USER/$ITCH_GAME ..."
@@ -44,7 +44,7 @@ echo ""
 # ── Windows ────────────────────────────────
 echo "  [2/3] Uploading Windows build..."
 butler push "$WINDOWS_DIR" \
-  "$ITCH_USER/$ITCH_GAME:windows" \
+  "$ITCH_USER/$ITCH_GAME:win" \
   --userversion "$VERSION"
 echo "  ✓ Windows uploaded."
 echo ""
