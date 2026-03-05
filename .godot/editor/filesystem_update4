@@ -1,0 +1,4 @@
+res://scenes/start.tscn
+res://themes/theme.tres
+res://code/bird.gd
+res://scenes/game.tscn
