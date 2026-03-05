@@ -37,6 +37,7 @@ func deathscreen():
 	add_sibling(screen)
 	
 func ded():
+	$"../AudioStreamPlayer".play()
 	game = false
 	$CollisionShape2D.disabled = true
 	deathscreen()
