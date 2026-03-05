@@ -18,15 +18,16 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_just_pressed("space"):
 			velocity.y = JUMP_VELOCITY
 			
+		
+		if position.y > 800 or position.y < 0:
+			ded()
 		 
 		for index in get_slide_collision_count():
 				var collision := get_slide_collision(index)
 				var body := collision.get_collider()
 				print(body.name)
 				#game over
-				game = false
-				$CollisionShape2D.disabled = true
-				deathscreen()
+				ded()
 	move_and_slide()
 	
 func deathscreen():
@@ -35,5 +36,7 @@ func deathscreen():
 	$"../Control/Score".visible = false
 	add_sibling(screen)
 	
-func restart():
-	get_tree().reload_current_scene()
+func ded():
+	game = false
+	$CollisionShape2D.disabled = true
+	deathscreen()
