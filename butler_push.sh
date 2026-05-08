@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# disclaimer ts is vibe coded as it's only used in development, no prod code!!
+
 # ─────────────────────────────────────────
 #  Deploy to itch.io via Butler
 # ─────────────────────────────────────────
