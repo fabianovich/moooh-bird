@@ -1,1 +1,1 @@
-<iframe frameborder="0" src="https://itch.io/embed/4345205?border_width=5&amp;bg_color=222&amp;fg_color=f1f1f1&amp;border_color=743f39" width="560" height="175"><a href="https://fabianovich.itch.io/moooh-bird">moooh bird by fabianovich</a></iframe>
+[![moooh bird by fabianovich]([https://img.itch.zone/aW1nLzQzNDUyMDUucG5n/original/6yq5vX.png](https://img.itch.zone/aW1nLzI1OTYxOTIyLnBuZw==/original/idxQP5.png))](https://fabianovich.itch.io/moooh-bird)
